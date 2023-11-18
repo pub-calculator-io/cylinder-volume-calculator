@@ -1,4 +1,4 @@
-# Cylinder Volume Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Cylinder Volume Calculator Widget for WordPress
 
 This calculator can be used as a cylinder volume calculator and surface area calculator. It also finds the lateral, base, and top surface areas.
 
