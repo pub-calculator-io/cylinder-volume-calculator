@@ -7,7 +7,7 @@ This calculator can be used as a cylinder volume calculator and surface area cal
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/cylinder-volume-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /cylinder-volume-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Cylinder Volume Calculator](https://www.calculator.io/cylinder-volume-calculator/ "Cylinder Volume Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
