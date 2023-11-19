@@ -1,4 +1,4 @@
-=== Cylinder Volume Calculator by www.calculator.io ===
+=== CI Cylinder volume calculator ===
 Contributors: calculatorio
 Tags: cylinder volume calculator, calculate cylinder area, cylinder capacity formula, find cylinder surface area, circular cylinder calculation, geometry cylinder solver, cylinder volume and area, cylinder dimensions calculator, liquid capacity cylinder, right circular cylinder calculator
 Requires at least: 5.0

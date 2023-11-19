@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Cylinder Volume Calculator by www.calculator.io
+Plugin Name: CI Cylinder volume calculator
 Plugin URI: https://www.calculator.io/cylinder-volume-calculator/
 Description: This calculator can be used as a cylinder volume calculator and surface area calculator. It also finds the lateral, base, and top surface areas.
 Version: 1.0.0
