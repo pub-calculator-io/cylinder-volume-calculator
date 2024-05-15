@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Cylinder Volume
 == Screenshots ==
 
 1. The Cylinder Volume Calculator Input Form.
-2. The Cylinder Volume Calculator Calculation Results.
 
 == Installation ==
 

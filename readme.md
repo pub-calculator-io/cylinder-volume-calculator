@@ -3,7 +3,6 @@
 This calculator can be used as a cylinder volume calculator and surface area calculator. It also finds the lateral, base, and top surface areas.
 
 ![Cylinder Volume Calculator Input Form](/assets/images/screenshot-1.png "Cylinder Volume Calculator Input Form")
-![Cylinder Volume Calculator Calculation Results](/assets/images/screenshot-2.png "Cylinder Volume Calculator Calculation Results")
 
 ## Installation
 

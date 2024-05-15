@@ -69,7 +69,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rh_radius" value="3" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -110,7 +110,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rh_height" value="5" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -152,7 +152,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rV_radius" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -193,7 +193,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rV_volume" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -235,7 +235,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rL_radius" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -276,7 +276,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="rL_lateral_area" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -318,7 +318,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="hL_height" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -359,7 +359,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="hL_lateral_area" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -401,7 +401,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="hV_height" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -442,7 +442,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="hV_volume" value="" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col volume-calculator,density-calculator,tank-volume-calculator,cubic-yards-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -502,13 +502,16 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
+                	<script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -523,8 +526,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<div class="result-table__wrapper">
 		<table class="result-table">
@@ -533,13 +535,13 @@
 					<th class="dark indigo" colspan="2">Answer</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="animate">
 				<tr>
 					<th>Radius</th>
 					<td>r = <span id="result_r">3</span> m</td>
 				</tr>
 				<tr>
-					<th>Height </th>
+					<th>Height</th>
 					<td>h = <span id="result_h">5</span> m</td>
 				</tr>
 				<tr>
